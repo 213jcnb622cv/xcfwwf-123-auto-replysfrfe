@@ -35,7 +35,7 @@ async def on_message(message):
         if status["status"] == "offline":
             await client.send_message(message.author, "**This is an automated Message**\n**Feature on test:** `Sorry, out at the moment, will get back to asap :D`")
 
-    elif message.content.startswith('noble!status:')
+    elif message.content.startswith('noble!status'):
         if message.author.id == client.user.id:
             url ="https://api.myjson.com/bins/r0tyv"
             status = myjson.get(url)
