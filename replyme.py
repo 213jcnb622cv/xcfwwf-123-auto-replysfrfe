@@ -10,6 +10,7 @@ client = discord.Client()
 async def on_ready():
     print("ONLINE REPLIER")
     print(client.user.name)
+     await client.change_presence(status = "online")
 
 @client.event
 async def on_message(message):
@@ -40,7 +41,7 @@ async def on_message(message):
             url ="https://api.myjson.com/bins/r0tyv"
             status = myjson.get(url)
             status = json.loads(status)
-            await client.send_message(channel, "`Currently: {}`".format(status["status"]))
+            await client.send_message(channel, "`Currently: {}` Link: https://api.myjson.com/bins/r0tyv".format(status["status"]))
 
 print("Starting......")
 
