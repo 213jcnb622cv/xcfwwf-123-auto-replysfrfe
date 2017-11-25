@@ -10,7 +10,7 @@ client = discord.Client()
 async def on_ready():
     print("ONLINE REPLIER")
     print(client.user.name)
-     await client.change_presence(status = "online")
+    await client.change_presence(status = "online")
 
 @client.event
 async def on_message(message):
