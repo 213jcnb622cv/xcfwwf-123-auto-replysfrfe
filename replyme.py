@@ -34,7 +34,7 @@ async def on_message(message):
         status = json.loads(status)
         if status["status"] == "offline":
             em = discord.Embed()
-            em.set_thumbnail(url = "{}".format(message.author.avatar_url))
+            em.set_thumbnail(url = "https://cdn.dribbble.com/users/187497/screenshots/2008551/message.gif")
             em.set_author(name = "Message(on_absence)", icon_url = "https://cdn.dribbble.com/users/320087/screenshots/1391703/024_cloud.gif")
             em.add_field(name = "Content:", value = "```{}```".format(message.content),inline = False)
             em.add_field(name = "Message_ID:", value = "```{}```".format(message.id),inline = False)
