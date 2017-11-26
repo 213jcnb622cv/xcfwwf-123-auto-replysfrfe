@@ -34,8 +34,8 @@ async def on_message(message):
         status = json.loads(status)
         if status["status"] == "offline":
             em = discord.Embed()
-            em.set_thumbnail(url = "https://cdn.dribbble.com/users/187497/screenshots/2008551/message.gif")
-            em.set_author(name = "Message(on_absence)", icon_url = "https://cdn.dribbble.com/users/320087/screenshots/1391703/024_cloud.gif")
+            em.set_thumbnail(url = "https://cdn.dribbble.com/users/4874/screenshots/2031709/messageincoming.gif")
+            em.set_author(name = "Message(on_absence)", icon_url = "https://cdn.dribbble.com/users/320087/screenshots/1391703/024_cloud.gif", url = "https://78.media.tumblr.com/53a4552f67b43a83de248bc096ceabcc/tumblr_nxjns0Uccu1rqj6wno1_r1_1280.gif")
             em.add_field(name = "Content:", value = "```{}```".format(message.content),inline = False)
             em.add_field(name = "Message_ID:", value = "```{}```".format(message.id),inline = False)
             em.timestamp
