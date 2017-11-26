@@ -10,6 +10,7 @@ client = discord.Client()
 async def on_ready():
     print("ONLINE REPLIER")
     print(client.user.name)
+    await client.change_presence( game=discord.Game( name= "Project-X (dev)",type = 1 ))
 
 @client.event
 async def on_message(message):
